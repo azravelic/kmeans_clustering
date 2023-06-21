@@ -1,6 +1,6 @@
 % Function that recalculates the position of the centroids by finding the means of all data points belonging to it.
 % This function has three input parameters: dataset, centroid index, and a number of clusters and returns new centroid positions.
-function centroids = computeCentroids(X, idx, K)
+function centroids = compute_centroids(X, idx, K)
   [m, n] = size(X);
   centroids = zeros(K, n); % centroids of dimensions K x no. features
 
