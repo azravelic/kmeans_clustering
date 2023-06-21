@@ -1,7 +1,7 @@
 % Function that randomly initializes centroids of a given dataset.
 % This function receives two input parameters - the dataset and the number of clusters.
 % It returns the centroid points.
-function centroids = initCentroids(X, K)
+function centroids = init_centroids(X, K)
 
     centroids = zeros(K,size(X,2)); % centroids matrix is of the size K X n, where n is no. features in X matrix
     randidx = randperm(size(X,1));  % Generates a random permutation of indices, chooses number from 1 to number of rows in X
