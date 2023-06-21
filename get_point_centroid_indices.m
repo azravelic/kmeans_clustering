@@ -1,6 +1,6 @@
 % Function that assigns each data point to the centroid based on the similarity function:  use Euclidean distance
 % Calculate the distance between each data point and centroids, and assign the specific data point to the closest centroid.
-function indices = getPointCentroidIndices(X, centroids)
+function indices = get_point_centroid_indices(X, centroids)
 
   K = size(centroids, 1); % get number of clusters
   indices = zeros(size(X,1), 1); % Dimension of indices is number of rows from the dataset X
